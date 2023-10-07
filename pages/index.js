@@ -1,5 +1,5 @@
 import HomePage from "@/components/HomePage/HomePage";
-import Tenent from "@/components/Tenent";
+import Tenent from "@/components/Tenants/Tenent";
 
 const App = ({ subdomain }) => {
   console.log("Received subdomain:", subdomain);

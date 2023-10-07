@@ -1,11 +1,32 @@
 // tenants.js
 const tenants = {
   tenant1: {
-    color: "lightblue",
-    title: "Welcome to Tenant 1",
-    content: "This is a customizable page for Tenant 1.",
-    // image: "/tenant1/logo.png",
-    font: "Arial, sans-serif",
+    navbar: [
+      {
+        name: "Home",
+        navLink: "#home",
+      },
+      {
+        name: "About Us",
+        navLink: "#aboutus",
+      },
+      {
+        name: "Explore",
+        navLink: "#explore",
+      },
+      {
+        name: "Contact Us",
+        navLink: "#contactus",
+      },
+    ],
+    introSection: {
+      leftContainer:
+        "Discover Your Perfect Rental Home, Where Comfort Meets Convenience.",
+      rightContainer:
+        "Embrace the effortless journey of discovering and reserving your perfect rental home, where simplicity and convenience converge in a user-friendly online experience, making your housing search a breeze.",
+      imageURL: "../../assets/images/png/tenant1Intro.jpg",
+    },
+    exploreSection: {},
   },
   tenant2: {
     color: "lightcoral",

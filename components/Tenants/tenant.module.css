@@ -1,0 +1,81 @@
+.navbar {
+  background-color: #333; /* Background color of the navbar */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.navList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.navList li {
+  margin-right: 20px; /* Adjust the spacing between items */
+}
+.navList li a {
+  text-decoration: none;
+  color: #fff; /* Text color for the links */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+.navbarContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Intro Section */
+.introSection {
+  padding: 20px;
+}
+.introFlex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.leftContainer {
+  flex: 7;
+  font-size: 3.5rem;
+}
+
+.rightContainer {
+  flex: 3;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.imageContainer {
+  height: 38rem;
+  border: 2px solid black;
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* Explore Section */
+
+.exploreSection {
+  padding: 20px;
+}
+.productCardsContainer {
+  display: flex;
+}
+.propertyCard {
+  width: 25rem;
+  height: 40rem;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4),
+    -4px -4px 8px rgba(255, 255, 255, 0.8);
+}
+.cardImg {
+  width: 100%;
+  height: 22rem;
+  border-radius: 15px;
+}
