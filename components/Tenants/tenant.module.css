@@ -1,5 +1,4 @@
 .navbar {
-  background-color: #333; /* Background color of the navbar */
   position: sticky;
   top: 0;
   z-index: 100;
@@ -16,13 +15,12 @@
   display: flex;
 }
 .navList li {
-  margin-right: 20px; /* Adjust the spacing between items */
+  margin-right: 20px;
 }
 .navList li a {
   text-decoration: none;
-  color: #fff; /* Text color for the links */
   font-weight: bold;
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+  transition: color 0.3s ease;
 }
 .navbarContent {
   display: flex;
@@ -52,18 +50,26 @@
 }
 .imageContainer {
   height: 38rem;
-  border: 2px solid black;
   width: 100%;
   margin-top: 12px;
+}
+.imageContainer img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Explore Section */
 
 .exploreSection {
   padding: 20px;
+  text-align: center;
 }
+
 .productCardsContainer {
   display: flex;
+  gap: 20px;
+  align-items: center;
+  width: fit-content;
 }
 .propertyCard {
   width: 25rem;
@@ -78,4 +84,119 @@
   width: 100%;
   height: 22rem;
   border-radius: 15px;
+}
+.propertyInfoItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.iconContainer {
+  width: 20px;
+  height: 20px;
+  background-color: #dfe4ff;
+  padding: 6px;
+  border-radius: 100px;
+}
+
+/* Features Section */
+.featuresSection {
+  text-align: center;
+  padding: 20px;
+}
+
+.featuresCardContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 60px 10px 60px;
+  height: 70vh;
+}
+
+.featuresCard {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.2s;
+  width: 22rem;
+}
+
+.featuresCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Important Feature Banner */
+.impFeatureBanner {
+  background-color: #333;
+  height: 70vh;
+  display: flex;
+  padding: 20px;
+}
+
+/* About Us Section */
+.aboutUsSection {
+  text-align: center;
+  padding: 20px;
+  justify-content: space-between;
+  height: 70vh;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 80%;
+  gap: 30px;
+}
+
+.imgContainer {
+  width: 10rem;
+  border: 2px solid black;
+  height: 100%;
+  flex: 4;
+}
+
+.infoContainer {
+  flex: 6;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  padding: 20px;
+  height: 60vh;
+  background-color: #333;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.emailInputContainer {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.sendButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
 }
