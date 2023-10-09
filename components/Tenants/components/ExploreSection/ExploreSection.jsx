@@ -4,14 +4,8 @@ const ExploreSection = ({ exploreContent }) => {
   return (
     <div className={styles.exploreSection} id="explore">
       <h1 className={styles.heading}>Your dream house is here</h1>
-      <div
-        style={{
-          width: "100%",
-          whiteSpace: "nowrap",
-          overflow: "auto",
-        }}
-      >
-        <div className={styles.productCardsContainer}>
+      <div className={styles.propertyCardsSection}>
+        <div className={styles.propertyCardsContainer}>
           {exploreContent.propertyCard.map((property, key) => (
             <div className={styles.propertyCard}>
               <img src={property.propertyImg} className={styles.cardImg} />

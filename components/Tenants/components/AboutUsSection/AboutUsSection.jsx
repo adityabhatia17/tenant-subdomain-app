@@ -2,7 +2,7 @@ import styles from "./about.module.css";
 
 const AboutUsSection = ({ aboutUsContent }) => {
   return (
-    <div className={styles.aboutUsSection}>
+    <div className={styles.aboutUsSection} id="aboutus">
       <h1 className={styles.heading}>
         About{" "}
         <span style={aboutUsContent.styles.spanText}>

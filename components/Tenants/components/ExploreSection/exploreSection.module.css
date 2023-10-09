@@ -4,8 +4,12 @@
 .heading {
   text-align: center;
 }
+.propertyCardsSection {
+  width: 100%;
+  overflow: auto;
+}
 
-.productCardsContainer {
+.propertyCardsContainer {
   display: flex;
   gap: 20px;
   align-items: center;

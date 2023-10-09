@@ -2,7 +2,7 @@ import styles from "./features.module.css";
 
 const FeaturesSection = ({ featuresContent }) => {
   return (
-    <div className={styles.featuresSection}>
+    <div className={styles.featuresSection} id="feature">
       <h1 className={styles.heading}>
         What makes{" "}
         <span style={featuresContent.styles.spanText}>

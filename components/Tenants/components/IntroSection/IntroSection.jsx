@@ -5,6 +5,7 @@ const IntroSection = ({ introContent }) => {
     <div
       className={styles.introSection}
       style={introContent.styles.introSection}
+      id="home"
     >
       <div className={styles.introFlex}>
         <div

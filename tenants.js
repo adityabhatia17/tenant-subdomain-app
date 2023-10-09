@@ -33,6 +33,10 @@ const tenants = {
           name: "Contact Us",
           navLink: "#contactus",
         },
+        {
+          name: "Why us",
+          navLink: "#feature",
+        },
       ],
     },
     introSection: {
@@ -444,8 +448,12 @@ const tenants = {
           navLink: "#explore",
         },
         {
+          name: "Why us",
+          navLink: "#feature",
+        },
+        {
           name: "Contact Us",
-          navLink: "#contactus",
+          navLink: "#footer",
         },
       ],
     },
