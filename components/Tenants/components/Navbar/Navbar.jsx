@@ -1,16 +1,16 @@
-import Image from "next/image";
+import styles from "./navbar.module.css";
 
 const Navbar = ({ navContent }) => {
   return (
-    <nav style={navContent.styles.navbar}>
-      <div style={navContent.styles.container}>
-        <div style={navContent.styles.navbarContent}>
+    <nav className={styles.navbar} style={navContent.styles.navbar}>
+      <div className={styles.container}>
+        <div className={styles.navbarContent}>
           <div>
-            <p>Homical.</p>
+            <p style={navContent.styles.logoColour}>{navContent.logoText}</p>
           </div>
-          <ul style={navContent.styles.navList}>
+          <ul className={styles.navList}>
             {navContent.navItems.map((navItem, key) => (
-              <li key={key} style={navContent.styles.navListItem}>
+              <li key={key}>
                 <a href={navItem.navLink} style={navContent.styles.navLink}>
                   {navItem.name}
                 </a>

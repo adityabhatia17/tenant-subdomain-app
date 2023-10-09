@@ -1,10 +1,10 @@
-import Navbar from "./components/Navbar";
-import IntroSection from "./components/IntroSection";
-import ExploreSection from "./components/ExploreSection";
-import FeaturesSection from "./components/FeaturesSection";
-import VisionBanner from "./components/VisionBanner";
-import AboutUsSection from "./components/AboutUsSection";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import IntroSection from "./components/IntroSection/IntroSection";
+import ExploreSection from "./components/ExploreSection/ExploreSection";
+import FeaturesSection from "./components/FeaturesSection/FeaturesSection";
+import VisionBanner from "./components/VisonBanner/VisionBanner";
+import AboutUsSection from "./components/AboutUsSection/AboutUsSection";
+import Footer from "./components/Footer/Footer";
 
 function Tenant({ content }) {
   return (
@@ -21,6 +21,7 @@ function Tenant({ content }) {
         <FeaturesSection featuresContent={content.featuresSection} />
 
         {/* Vision Banner */}
+
         <VisionBanner visionContent={content.impFeatureBanner} />
 
         {/* About Us Section */}

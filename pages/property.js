@@ -8,7 +8,6 @@ export default Property;
 
 export async function getServerSideProps(context) {
   const subdomain = context.req.query.subdomain;
-  console.log("Subdomain in getServerSideProps:", subdomain);
 
   if (!subdomain) {
     return {

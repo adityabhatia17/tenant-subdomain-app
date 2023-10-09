@@ -4,37 +4,18 @@ const tenants = {
     navbar: {
       styles: {
         navbar: {
-          position: "sticky",
-          top: "0",
-          zIndex: "100",
           backgroundColor: "white",
         },
-        container: {
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "10px",
-        },
-        navList: {
-          listStyleType: "none",
-          padding: "0",
-          margin: "0",
-          display: "flex",
-        },
-        navListItem: {
-          marginRight: 20,
+        logoColour: {
+          color: "#34B3C0",
+          fontWeight: "700",
+          fontSize: "1.5rem",
         },
         navLink: {
-          textDecoration: "none",
-          fontWeight: "bold",
-          transition: "color 0.3s ease",
           color: "black",
         },
-        navbarContent: {
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        },
       },
+      logoText: "Homical.",
       navItems: [
         {
           name: "Home",
@@ -56,46 +37,48 @@ const tenants = {
     },
     introSection: {
       styles: {
+        buttonStyle: {
+          background: "none",
+          border: "2px solid #34B3C0",
+          color: "#34B3C0",
+          padding: "10px 15px",
+          borderRadius: "50px",
+          cursor: "pointer",
+          fontSize: "1rem",
+          textDecoration: "none",
+        },
         introSection: {
-          padding: "20px",
+          backgroundColor: "white",
         },
-        introFlex: {
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          flexWrap: "wrap",
+        leftContainerText: {
+          color: "black",
         },
-        leftContainer: {
-          flex: 7,
-          fontSize: "3.5rem",
+        rightContainerText: {
+          color: "black",
         },
         rightContainer: {
-          flex: 3,
-          fontSize: "1.5rem",
-          fontWeight: 200,
+          display: "block",
         },
-        imageContainer: {
-          height: "38rem",
-          width: "100%",
-          marginTop: "12px",
-        },
-        imageStyle: {
-          width: "100%",
-          height: "100%",
+        buttonContainer: {
+          display: "none",
         },
       },
       leftContainer:
         "Discover Your Perfect Rental Home, Where Comfort Meets Convenience.",
       rightContainer:
         "Embrace the effortless journey of discovering and reserving your perfect rental home, where simplicity and convenience converge in a user-friendly online experience, making your housing search a breeze.",
-      imageURL: "../../assets/images/png/tenant1Intro.jpg",
+      imageURL:
+        "https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/Stock-Modern-House-In-Twilight-AdobeStock-368976934-copy.jpg",
+      buttonText: "Contact Us",
+      buttonNavigation: "#footer",
     },
     exploreSection: {
       propertyCard: [
         {
-          propertyImg: "",
-          propertyName: "",
-          propertyAddress: "",
+          propertyImg:
+            "https://content.jdmagicbox.com/comp/delhi/j6/011pxx11.xx11.171124120852.m9j6/catalogue/golf-link-pg-home-dwarka-delhi-paying-guest-accommodations-al0rb.jpg",
+          propertyName: "DSK HOMES",
+          propertyAddress: "Gurugram, Harayana, India",
           propertyInfoItem: [
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2283/2283945.png",
@@ -113,9 +96,10 @@ const tenants = {
           price: "8,000",
         },
         {
-          propertyImg: "",
-          propertyName: "",
-          propertyAddress: "",
+          propertyImg:
+            "https://content.jdmagicbox.com/comp/delhi/j6/011pxx11.xx11.171124120852.m9j6/catalogue/golf-link-pg-home-dwarka-delhi-paying-guest-accommodations-al0rb.jpg",
+          propertyName: "DSK HOMES",
+          propertyAddress: "Gurugram, Harayana, India",
           propertyInfoItem: [
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2283/2283945.png",
@@ -133,9 +117,10 @@ const tenants = {
           price: "10,000",
         },
         {
-          propertyImg: "",
-          propertyName: "",
-          propertyAddress: "",
+          propertyImg:
+            "https://content.jdmagicbox.com/comp/delhi/j6/011pxx11.xx11.171124120852.m9j6/catalogue/golf-link-pg-home-dwarka-delhi-paying-guest-accommodations-al0rb.jpg",
+          propertyName: "DSK HOMES",
+          propertyAddress: "Gurugram, Harayana, India",
           propertyInfoItem: [
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2283/2283945.png",
@@ -153,9 +138,10 @@ const tenants = {
           price: "5,000",
         },
         {
-          propertyImg: "",
-          propertyName: "",
-          propertyAddress: "",
+          propertyImg:
+            "https://content.jdmagicbox.com/comp/delhi/j6/011pxx11.xx11.171124120852.m9j6/catalogue/golf-link-pg-home-dwarka-delhi-paying-guest-accommodations-al0rb.jpg",
+          propertyName: "DSK HOMES",
+          propertyAddress: "Gurugram, Harayana, India",
           propertyInfoItem: [
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2283/2283945.png",
@@ -173,9 +159,10 @@ const tenants = {
           price: "5,000",
         },
         {
-          propertyImg: "",
-          propertyName: "",
-          propertyAddress: "",
+          propertyImg:
+            "https://content.jdmagicbox.com/comp/delhi/j6/011pxx11.xx11.171124120852.m9j6/catalogue/golf-link-pg-home-dwarka-delhi-paying-guest-accommodations-al0rb.jpg",
+          propertyName: "DSK HOMES",
+          propertyAddress: "Gurugram, Harayana, India",
           propertyInfoItem: [
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2283/2283945.png",
@@ -193,9 +180,10 @@ const tenants = {
           price: "5,000",
         },
         {
-          propertyImg: "",
-          propertyName: "",
-          propertyAddress: "",
+          propertyImg:
+            "https://content.jdmagicbox.com/comp/delhi/j6/011pxx11.xx11.171124120852.m9j6/catalogue/golf-link-pg-home-dwarka-delhi-paying-guest-accommodations-al0rb.jpg",
+          propertyName: "DSK HOMES",
+          propertyAddress: "Gurugram, Harayana, India",
           propertyInfoItem: [
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2283/2283945.png",
@@ -213,47 +201,12 @@ const tenants = {
         },
       ],
       styles: {
-        exploreSection: {
-          padding: "20px",
-        },
-        productCardsContainer: {
-          display: "flex",
-          gap: "20px",
-          alignItems: "center",
-          width: "fit-content",
-        },
-        propertyCard: {
-          width: "25rem",
-          height: "40rem",
-          border: "2px solid black",
-          borderRadius: "15px",
-          padding: "8px",
-          boxShadow:
-            "4px 4px 8px rgba(0, 0, 0, 0.4), -4px -4px 8px rgba(255, 255, 255, 0.8)",
-        },
-        cardImg: {
-          width: "100%",
-          height: "22rem",
-          borderRadius: "15px",
-        },
-        propertyInfoItem: {
-          display: "flex",
-          alignItems: "center",
-          gap: "12px",
-        },
-        iconContainer: {
-          width: "20px",
-          height: "20px",
-          backgroundColor: "#dfe4ff",
-          padding: "6px",
-          borderRadius: "100px",
-        },
-        priceAndButtonContainer: {
-          display: "flex",
-          alignItems: "center",
-          paddingTop: "10px",
-          borderTop: "2px solid lightGrey",
-          justifyContent: "space-between",
+        viewInfoButton: {
+          padding: "10px 20px",
+          backgroundColor: "#34B3C0",
+          border: "none",
+          color: "white",
+          cursor: "pointer",
         },
       },
     },
@@ -261,19 +214,6 @@ const tenants = {
       styles: {
         spanText: {
           color: "#34B3C0",
-        },
-        featuresSection: {
-          textAlign: "center",
-          padding: "20px",
-        },
-        featuresCardContainer: {
-          display: "flex",
-          alignItems: "center",
-          flexWrap: "wrap",
-          alignContent: "center",
-          justifyContent: "center",
-          gap: "20px",
-          padding: "10px 60px 10px 60px",
         },
         featuresCard: {
           backgroundColor: "#f9f9f9",
@@ -283,6 +223,9 @@ const tenants = {
           borderRadius: "5px",
           transition: "transform 0.2s",
           width: "22rem",
+        },
+        featureHeading: {
+          color: "#34B3C0",
         },
       },
       heading: "Homical",
@@ -295,31 +238,31 @@ const tenants = {
         },
         {
           featureIcon: "",
-          featureName: "Digital Payments",
+          featureName: "Smart KYC",
           featureDescription:
             "Now handle rent payments digitally with smart receipts and earn rewards on every rent payment.",
         },
         {
           featureIcon: "",
-          featureName: "Digital Payments",
+          featureName: "E-Agreement",
           featureDescription:
             "Now handle rent payments digitally with smart receipts and earn rewards on every rent payment.",
         },
         {
           featureIcon: "",
-          featureName: "Digital Payments",
+          featureName: "24/7 Support",
           featureDescription:
             "Now handle rent payments digitally with smart receipts and earn rewards on every rent payment.",
         },
         {
           featureIcon: "",
-          featureName: "Digital Payments",
+          featureName: "Tenant Membership",
           featureDescription:
             "Now handle rent payments digitally with smart receipts and earn rewards on every rent payment.",
         },
         {
           featureIcon: "",
-          featureName: "Digital Payments",
+          featureName: "Easy Access",
           featureDescription:
             "Now handle rent payments digitally with smart receipts and earn rewards on every rent payment.",
         },
@@ -328,10 +271,25 @@ const tenants = {
     impFeatureBanner: {
       styles: {
         impFeatureBanner: {
-          backgroundColor: "#333",
-          height: "70vh",
+          backgroundColor: "#34B3C0",
           display: "flex",
           padding: "20px",
+        },
+        visionHeading: {
+          color: "white",
+          letterSpacing: "4px",
+        },
+        vision: {
+          color: "white",
+          wordSpacing: "2px",
+          fontWeight: "300",
+        },
+        seeMoreButton: {
+          padding: "15px 20px",
+          borderRadius: "40px",
+          backgroundColor: "white",
+          color: "black",
+          border: "none",
         },
       },
       heading: "Seamless and Convenient",
@@ -342,30 +300,12 @@ const tenants = {
     },
     aboutUsSection: {
       styles: {
-        aboutUsSection: {
-          textAlign: "center",
-          padding: "20px",
-          justifyContent: "space-between",
-          height: "70vh",
-        },
-        contentContainer: {
-          display: "flex",
-          justifyContent: "space-between",
-          height: "80%",
-          gap: "30px",
-        },
-        imageContainer: {
-          width: "10rem",
-          border: "2px solid black",
-          height: "100%",
-          flex: 4,
-        },
-        infoContainer: {
-          flex: 6,
+        spanText: {
+          color: "#34B3C0",
         },
       },
-      heading: "About Homical",
-      imgUrl: "",
+      heading: "Homical",
+      imgUrl: "https://indiacsr.in/wp-content/uploads/2022/07/India-Gate.jpg",
       infoContainer: {
         heading: "About Us",
         description:
@@ -375,12 +315,10 @@ const tenants = {
     footerSection: {
       styles: {
         footer: {
-          display: "flex",
-          padding: "20px",
-          height: "60vh",
-          backgroundColor: "#333",
-          justifyContent: "space-around",
-          flexWrap: "wrap",
+          backgroundColor: "#34B3C0",
+        },
+        heading: {
+          color: "white",
         },
         emailInputContainer: {
           display: "flex",
@@ -390,8 +328,8 @@ const tenants = {
           borderRadius: "20px",
         },
         sendButton: {
-          backgroundColor: "#007bff",
-          color: "#fff",
+          backgroundColor: "white",
+          color: "black",
           border: "none",
           borderRadius: "20px",
           padding: "10px 20px",
@@ -406,8 +344,31 @@ const tenants = {
           borderRadius: "20px",
           outline: "none",
         },
+        companyDesc: {
+          color: "white",
+          fontSize: "2rem",
+          fontWeight: "300",
+        },
+        companyLinksHeading: {
+          color: "white",
+          fontWeight: 700,
+          fontSize: "1.5rem",
+        },
+        companyLink: {
+          color: "white",
+        },
+        detailHeading: {
+          color: "white",
+          textDecoration: "underline",
+        },
+        detail: {
+          color: "white",
+        },
+        footerLogo: {
+          display: "none",
+        },
       },
-      heading: "Subscribe to Our Newsletter to Stay Updated",
+      heading: "Subscribe to Our Newsletter to Get Latest Updates",
       inputPlaceholder: "Enter Your Email",
       buttonText: "Send",
       logoUrl: "",
@@ -420,73 +381,119 @@ const tenants = {
           linkAddress: "#home",
         },
         {
-          linkName: "Home",
-          linkAddress: "#home",
+          linkName: "About Us",
+          linkAddress: "#aboutus",
         },
         {
-          linkName: "Home",
-          linkAddress: "#home",
+          linkName: "Explore",
+          linkAddress: "#explore",
         },
         {
-          linkName: "Home",
-          linkAddress: "#home",
-        },
-        {
-          linkName: "Home",
-          linkAddress: "#home",
+          linkName: "Contact Us",
+          linkAddress: "#contactus",
         },
       ],
       contactUs: {
         heading: "Contact Us",
         details: [
           {
-            detailHeading: "Phone",
+            detailHeading: "Phone:",
             detail: "+91-999999",
           },
           {
-            detailHeading: "Email",
+            detailHeading: "Email:",
             detail: "info@homical.com",
           },
           {
-            detailHeading: "Office Address",
+            detailHeading: "Office Address:",
             detail: "Gurgaon, Harayana, India",
           },
         ],
       },
+      logoLink:
+        "https://i.ibb.co/ZGJ450R/Screenshot-2023-10-09-at-6-52-32-PM.png",
     },
   },
   tenant2: {
-    navbar: [
-      {
-        name: "Home",
-        navLink: "#home",
+    navbar: {
+      styles: {
+        navbar: {
+          backgroundColor: "#191423",
+        },
+        logoColour: {
+          color: "white",
+          fontWeight: "700",
+          fontSize: "1.5rem",
+        },
+        navLink: {
+          color: "white",
+        },
       },
-      {
-        name: "About Us",
-        navLink: "#aboutus",
-      },
-      {
-        name: "Explore",
-        navLink: "#explore",
-      },
-      {
-        name: "Contact Us",
-        navLink: "#contactus",
-      },
-    ],
+      logoText: "Lepo",
+      navItems: [
+        {
+          name: "Home",
+          navLink: "#home",
+        },
+        {
+          name: "About Us",
+          navLink: "#aboutus",
+        },
+        {
+          name: "Explore",
+          navLink: "#explore",
+        },
+        {
+          name: "Contact Us",
+          navLink: "#contactus",
+        },
+      ],
+    },
     introSection: {
-      leftContainer:
-        "Discover Your Perfect Rental Home, Where Comfort Meets Convenience.",
+      styles: {
+        buttonStyle: {
+          backgroundColor: "#47D185",
+          padding: "10px 15px",
+          borderRadius: "50px",
+          cursor: "pointer",
+          color: "white",
+          fontSize: "1rem",
+          textDecoration: "none",
+        },
+        buttonContainer: {
+          textAlign: "center",
+          marginTop: "30px",
+          marginBottom: "30px",
+        },
+        introSection: {
+          backgroundColor: "#191423",
+        },
+        leftContainerText: {
+          color: "white",
+          textAlign: "center",
+        },
+        rightContainerText: {
+          color: "white",
+        },
+        rightContainer: {
+          display: "none",
+        },
+      },
+      leftContainer: "Everyone Deserves the Opportunity of Home",
       rightContainer:
-        "Embrace the effortless journey of discovering and reserving your perfect rental home, where simplicity and convenience converge in a user-friendly online experience, making your housing search a breeze.",
-      imageURL: "../../assets/images/png/tenant1Intro.jpg",
+        "It's easier to reach your saving goals when you have the right savings account. Take a look and find the right one for you!",
+      imageURL:
+        "https://img.staticmb.com/mbcontent/images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg",
+      buttonText: "Explore Properties",
+      buttonNavigation: "#explore",
     },
     exploreSection: {
       propertyCard: [
         {
-          propertyImg: "",
-          propertyName: "",
-          propertyAddress: "",
+          propertyImg:
+            "https://content.jdmagicbox.com/comp/delhi/y1/011pxx11.xx11.200623153108.w1y1/catalogue/aggarwal-pg-house-shahdara-delhi-paying-guest-accommodations-for-men-bttmi5m2er.jpg?clr=",
+          propertyName: "DSK HOMES",
+          propertyAddress: "Hyderabad, India",
           propertyInfoItem: [
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2283/2283945.png",
@@ -501,11 +508,13 @@ const tenants = {
               info: "Students / Working Professionals",
             },
           ],
+          price: "8,000",
         },
         {
-          propertyImg: "",
-          propertyName: "",
-          propertyAddress: "",
+          propertyImg:
+            "https://content.jdmagicbox.com/comp/delhi/y1/011pxx11.xx11.200623153108.w1y1/catalogue/aggarwal-pg-house-shahdara-delhi-paying-guest-accommodations-for-men-bttmi5m2er.jpg?clr=",
+          propertyName: "DSK HOMES",
+          propertyAddress: "Hyderabad, India",
           propertyInfoItem: [
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2283/2283945.png",
@@ -520,11 +529,13 @@ const tenants = {
               info: "Students",
             },
           ],
+          price: "10,000",
         },
         {
-          propertyImg: "",
-          propertyName: "",
-          propertyAddress: "",
+          propertyImg:
+            "https://content.jdmagicbox.com/comp/delhi/y1/011pxx11.xx11.200623153108.w1y1/catalogue/aggarwal-pg-house-shahdara-delhi-paying-guest-accommodations-for-men-bttmi5m2er.jpg?clr=",
+          propertyName: "DSK HOMES",
+          propertyAddress: "Hyderabad, India",
           propertyInfoItem: [
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2283/2283945.png",
@@ -532,18 +543,20 @@ const tenants = {
             },
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2517/2517326.png",
-              info: "Single, Double, Triple",
+              info: "Girls",
             },
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2784/2784403.png",
-              info: "Single, Double, Triple",
+              info: "Working Professionals",
             },
           ],
+          price: "5,000",
         },
         {
-          propertyImg: "",
-          propertyName: "",
-          propertyAddress: "",
+          propertyImg:
+            "https://content.jdmagicbox.com/comp/delhi/y1/011pxx11.xx11.200623153108.w1y1/catalogue/aggarwal-pg-house-shahdara-delhi-paying-guest-accommodations-for-men-bttmi5m2er.jpg?clr=",
+          propertyName: "DSK HOMES",
+          propertyAddress: "Hyderabad, India",
           propertyInfoItem: [
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2283/2283945.png",
@@ -551,37 +564,41 @@ const tenants = {
             },
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2517/2517326.png",
-              info: "Single, Double, Triple",
+              info: "Boys/Girls",
             },
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2784/2784403.png",
-              info: "Single, Double, Triple",
+              info: "Students",
             },
           ],
+          price: "5,000",
         },
         {
-          propertyImg: "",
-          propertyName: "",
-          propertyAddress: "",
+          propertyImg:
+            "https://content.jdmagicbox.com/comp/delhi/y1/011pxx11.xx11.200623153108.w1y1/catalogue/aggarwal-pg-house-shahdara-delhi-paying-guest-accommodations-for-men-bttmi5m2er.jpg?clr=",
+          propertyName: "DSK HOMES",
+          propertyAddress: "Hyderabad, India",
           propertyInfoItem: [
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2283/2283945.png",
-              info: "Single, Double, Triple",
+              info: "Single",
             },
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2517/2517326.png",
-              info: "Single, Double, Triple",
+              info: "Boys/Girls",
             },
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2784/2784403.png",
-              info: "Single, Double, Triple",
+              info: "Students/Working Professionals",
             },
           ],
+          price: "5,000",
         },
         {
-          propertyImg: "",
-          propertyName: "",
-          propertyAddress: "",
+          propertyImg:
+            "https://content.jdmagicbox.com/comp/delhi/y1/011pxx11.xx11.200623153108.w1y1/catalogue/aggarwal-pg-house-shahdara-delhi-paying-guest-accommodations-for-men-bttmi5m2er.jpg?clr=",
+          propertyName: "DSK HOMES",
+          propertyAddress: "Hyderabad, India",
           propertyInfoItem: [
             {
               icon: "https://cdn-icons-png.flaticon.com/128/2283/2283945.png",
@@ -598,13 +615,38 @@ const tenants = {
           ],
         },
       ],
+      styles: {
+        viewInfoButton: {
+          padding: "10px 20px",
+          backgroundColor: "#47D185",
+          border: "none",
+          color: "white",
+          cursor: "pointer",
+        },
+      },
     },
     featuresSection: {
-      heading: "Why Homical?",
+      styles: {
+        spanText: {
+          color: "#47D185",
+        },
+        featuresCard: {
+          backgroundColor: "#191423",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+          padding: "20px",
+          borderRadius: "20px",
+          width: "22rem",
+          color: "white",
+        },
+        featureHeading: {
+          color: "#47D185",
+        },
+      },
+      heading: "Lepo",
       featuresCard: [
         {
           featureIcon: "",
-          featureName: "Digital Payments",
+          featureName: "Smart KYC",
           featureDescription:
             "Now handle rent payments digitally with smart receipts and earn rewards on every rent payment.",
         },
@@ -616,31 +658,54 @@ const tenants = {
         },
         {
           featureIcon: "",
-          featureName: "Digital Payments",
+          featureName: "E-Agreement",
           featureDescription:
             "Now handle rent payments digitally with smart receipts and earn rewards on every rent payment.",
         },
         {
           featureIcon: "",
-          featureName: "Digital Payments",
+          featureName: "Tenant Membership",
           featureDescription:
             "Now handle rent payments digitally with smart receipts and earn rewards on every rent payment.",
         },
         {
           featureIcon: "",
-          featureName: "Digital Payments",
+          featureName: "Easy Access",
           featureDescription:
             "Now handle rent payments digitally with smart receipts and earn rewards on every rent payment.",
         },
         {
           featureIcon: "",
-          featureName: "Digital Payments",
+          featureName: "24/7 Support",
           featureDescription:
             "Now handle rent payments digitally with smart receipts and earn rewards on every rent payment.",
         },
       ],
     },
     impFeatureBanner: {
+      styles: {
+        impFeatureBanner: {
+          backgroundColor: "#34B3C0",
+          display: "none",
+          padding: "20px",
+        },
+        visionHeading: {
+          color: "white",
+          letterSpacing: "4px",
+        },
+        vision: {
+          color: "white",
+          wordSpacing: "2px",
+          fontWeight: "300",
+        },
+        seeMoreButton: {
+          padding: "15px 20px",
+          borderRadius: "40px",
+          backgroundColor: "white",
+          color: "black",
+          border: "none",
+        },
+      },
       heading: "Seamless and Convenient",
       vision:
         "We believe in leveraging technology to make real estate transactions more accessible, transparent and efficient.",
@@ -648,8 +713,14 @@ const tenants = {
       imageUrl: "",
     },
     aboutUsSection: {
-      heading: "About Homical",
-      imgUrl: "",
+      styles: {
+        spanText: {
+          color: "#47D185",
+        },
+      },
+      heading: "Lepo",
+      imgUrl:
+        "https://images.herzindagi.info/image/2022/Oct/places-to-visit.jpg",
       infoContainer: {
         heading: "About Us",
         description:
@@ -657,7 +728,63 @@ const tenants = {
       },
     },
     footerSection: {
-      heading: "Subscribe to Our Newsletter to Stay Updated",
+      styles: {
+        footer: {
+          backgroundColor: "#191423",
+        },
+        heading: {
+          color: "white",
+          display: "none",
+        },
+        emailInputContainer: {
+          display: "none",
+        },
+        emailContainer: {
+          display: "none",
+        },
+        sendButton: {
+          backgroundColor: "white",
+          color: "black",
+          border: "none",
+          borderRadius: "20px",
+          padding: "10px 20px",
+          marginLeft: "10px",
+          cursor: "pointer",
+          outline: "none",
+        },
+        emailInput: {
+          flex: 1,
+          padding: "10px",
+          border: "none",
+          borderRadius: "20px",
+          outline: "none",
+        },
+        companyDesc: {
+          color: "white",
+          fontSize: "2rem",
+          fontWeight: "300",
+        },
+        companyLinksHeading: {
+          color: "white",
+          fontWeight: 700,
+          fontSize: "1.5rem",
+        },
+        companyLink: {
+          color: "white",
+        },
+        detailHeading: {
+          color: "white",
+          textDecoration: "underline",
+        },
+        detail: {
+          color: "white",
+        },
+        footerLogo: {
+          display: "flex",
+        },
+      },
+      heading: "",
+      inputPresent: false,
       inputPlaceholder: "Enter Your Email",
       buttonText: "Send",
       logoUrl: "",
@@ -670,39 +797,37 @@ const tenants = {
           linkAddress: "#home",
         },
         {
-          linkName: "Home",
-          linkAddress: "#home",
+          linkName: "About Us",
+          linkAddress: "#aboutus",
         },
         {
-          linkName: "Home",
-          linkAddress: "#home",
+          linkName: "Explore",
+          linkAddress: "#explore",
         },
         {
-          linkName: "Home",
-          linkAddress: "#home",
-        },
-        {
-          linkName: "Home",
-          linkAddress: "#home",
+          linkName: "Contact Us",
+          linkAddress: "#contactus",
         },
       ],
       contactUs: {
         heading: "Contact Us",
         details: [
           {
-            detailHeading: "Phone",
+            detailHeading: "Phone:",
             detail: "+91-999999",
           },
           {
-            detailHeading: "Email",
-            detail: "info@homical.com",
+            detailHeading: "Email:",
+            detail: "info@lepo.com",
           },
           {
-            detailHeading: "Office Address",
+            detailHeading: "Office Address:",
             detail: "Gurgaon, Harayana, India",
           },
         ],
       },
+      logoLink:
+        "https://i.ibb.co/ZGJ450R/Screenshot-2023-10-09-at-6-52-32-PM.png",
     },
   },
 };

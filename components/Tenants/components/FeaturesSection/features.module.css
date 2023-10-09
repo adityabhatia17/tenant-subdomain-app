@@ -1,0 +1,43 @@
+.featuresSection {
+  padding: 20px;
+}
+
+.featuresCardContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 100px 60px 100px 60px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.featuresCard {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.2s;
+  width: 22rem;
+}
+
+.featuresCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* media queries */
+@media (max-width: 820px) {
+  .featuresSection {
+    padding: 10px;
+  }
+  .featuresCardContainer {
+    padding: 0px;
+    gap: 10px;
+  }
+}
