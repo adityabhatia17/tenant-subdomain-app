@@ -1,40 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tenant Subdomain App
+
+## Description
+
+The Tenant Subdomain App is a web application that allows users to create customized websites for two different tenants using a single template. This application is hosted on the same server and retrieves data in JSON format through an API built with Next.js.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this project, follow these steps after you clone this repository:
+
+### 1. Installation
+
+First, navigate to the project directory and install all the required libraries using npm:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Configuration
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+You will need to add the subdomains to your computer's `etc/hosts` file to test the subdomain functionality locally. Here's how to do it:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. **Windows:**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+   - Open Notepad or any text editor with administrator privileges.
+   - Go to `C:\Windows\System32\drivers\etc\hosts`.
+   - Open the `hosts` file.
+   - Add the following lines to the end of the file, replacing `subdomain1.example.com` and `subdomain2.example.com` with your desired subdomains and IP address (usually `127.0.0.1` for localhost):
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+     ```plaintext
+     127.0.0.1 tenant1.localhost
+     127.0.0.1 tenant2.localhost
+     ```
 
-## Learn More
+   - Save the file.
 
-To learn more about Next.js, take a look at the following resources:
+2. **macOS / Linux:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   - Open a terminal and use a text editor with superuser privileges (e.g., `sudo nano`) to edit the hosts file:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+     ```bash
+     sudo nano /etc/hosts
+     ```
 
-## Deploy on Vercel
+   - Add the same lines as in the Windows example:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+     ```plaintext
+     127.0.0.1 tenant1.localhost
+     127.0.0.1 tenant2.localhost
+     ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   - Save the file and exit the text editor.
+
+Once you've completed the above steps, you can proceed with running the web application and accessing it using the specified subdomains.
+
+### 3. Run the app
+```bash
+npm run dev
+```
+Once the server starts, Visit **tenant1.localhost:3000** and **tenant2.localhost:3000**
