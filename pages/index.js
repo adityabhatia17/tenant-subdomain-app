@@ -1,7 +1,9 @@
+import Onboarding from "@/components/Onboarding/Onboarding";
 import Tenant from "@/components/Tenants/Tenant";
 
-const HomePage = ({ content }) => {
-  return <Tenant content={content} />;
+const HomePage = ({ content, message }) => {
+  if (message) return <Onboarding message={message} />;
+  else return <Tenant content={content} />;
 };
 
 export async function getServerSideProps(context) {
@@ -9,7 +11,7 @@ export async function getServerSideProps(context) {
   const data = await res.json();
 
   return {
-    props: { content: data.content },
+    props: { content: data.content, message: data.message },
   };
 }
 

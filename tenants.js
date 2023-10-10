@@ -33,10 +33,6 @@ const tenants = {
           name: "Contact Us",
           navLink: "#contactus",
         },
-        {
-          name: "Why us",
-          navLink: "#feature",
-        },
       ],
     },
     introSection: {
@@ -838,6 +834,8 @@ const tenants = {
         "https://i.ibb.co/ZGJ450R/Screenshot-2023-10-09-at-6-52-32-PM.png",
     },
   },
+  tenant3: {},
+  default: {},
 };
 
 export default tenants;
