@@ -835,7 +835,6 @@ const tenants = {
     },
   },
   tenant3: {},
-  default: {},
 };
 
 export default tenants;
